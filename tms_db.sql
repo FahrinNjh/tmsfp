@@ -54,6 +54,7 @@ INSERT INTO `project_list` (`id`, `name`, `description`, `status`, `start_date`,
 -- Struktur dari tabel `system_settings`
 --
 
+DROP TABLE IF EXISTS `system_settings`
 CREATE TABLE `system_settings` (
   `id` int(30) NOT NULL,
   `name` text NOT NULL,
@@ -76,6 +77,7 @@ INSERT INTO `system_settings` (`id`, `name`, `email`, `contact`, `address`, `cov
 -- Struktur dari tabel `task_list`
 --
 
+DROP TABLE IF EXISTS `task_list`
 CREATE TABLE `task_list` (
   `id` int(30) NOT NULL,
   `project_id` int(30) NOT NULL,
@@ -104,6 +106,7 @@ INSERT INTO `task_list` (`id`, `project_id`, `task`, `description`, `status`, `d
 -- Struktur dari tabel `users`
 --
 
+DROP TABLE IF EXISTS `users`
 CREATE TABLE `users` (
   `id` int(30) NOT NULL,
   `firstname` varchar(200) NOT NULL,
@@ -133,6 +136,7 @@ INSERT INTO `users` (`id`, `firstname`, `lastname`, `email`, `password`, `type`,
 -- Struktur dari tabel `user_productivity`
 --
 
+DROP TABLE IF EXISTS `user_productivity`
 CREATE TABLE `user_productivity` (
   `id` int(30) NOT NULL,
   `project_id` int(30) NOT NULL,
