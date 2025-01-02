@@ -27,6 +27,7 @@ SET time_zone = "+00:00";
 -- Struktur dari tabel `project_list`
 --
 
+DROP TABLE IF EXISTS `project_list`;
 CREATE TABLE `project_list` (
   `id` int(30) NOT NULL,
   `name` varchar(200) NOT NULL,
