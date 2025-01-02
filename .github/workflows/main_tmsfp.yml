@@ -63,4 +63,4 @@ jobs:
           app-name: 'tmsfp'
           slot-name: 'Production'
           package: .
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_F2DC0C03E3FB4056AA673262E9646841 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_F51B2E76F6CC4749892E93ACF05872CB }}
