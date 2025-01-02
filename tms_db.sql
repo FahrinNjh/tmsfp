@@ -87,7 +87,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   `email` VARCHAR(200) NOT NULL,
   `password` TEXT NOT NULL,
   `type` TINYINT(1) NOT NULL DEFAULT 2 COMMENT '1 = admin, 2 = staff',
-  `avatar` TEXT NOT NULL DEFAULT 'no-image-available.png',
+  `avatar` TEXT,
   `date_created` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
