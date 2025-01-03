@@ -3,6 +3,7 @@ ob_start();
 date_default_timezone_set("Asia/Manila");
 
 $action = $_GET['action'];
+include 'db_connect.php';
 include 'admin_class.php';
 $crud = new Action();
 if($action == 'login'){
