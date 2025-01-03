@@ -2,7 +2,7 @@
 <html lang="en">
 <?php 
 session_start();
-include('./db_connect.php');
+include('db_connect.php');
   ob_start();
   // if(!isset($_SESSION['system'])){
 
